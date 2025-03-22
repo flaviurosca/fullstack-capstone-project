@@ -30,8 +30,8 @@ function RegisterPage() {
         });
 
         const json = await response.json();
-        console.log('json data', json);
-        console.log('er', json.error);
+        // console.log('json data', json);
+        // console.log('er', json.error);
 
         if (json.authtoken) {
             sessionStorage.setItem('auth-token', json.authtoken);

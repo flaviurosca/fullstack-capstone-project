@@ -36,7 +36,7 @@ function LoginPage() {
         });
 
         const json = await res.json();
-        console.log('Json', json);
+        // console.log('Json', json);
         if (json.authtoken) {
             sessionStorage.setItem('auth-token', json.authtoken);
             sessionStorage.setItem('name', json.userName);
